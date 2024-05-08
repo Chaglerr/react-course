@@ -150,3 +150,51 @@
 .create-form input[type="submit"]:hover {
   background-color: #45a049;
 }
+
+
+.post-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 500px;
+  margin-left: 35%;
+  margin-top: 29px;
+}
+
+.post-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.post-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.post-footer {
+  display: flex;
+  align-items: center;
+}
+
+.post-username {
+  margin-right: auto;
+  font-style: italic;
+}
+
+.like-button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.like-count {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.like-button:hover {
+  color: #4CAF50;
+}
