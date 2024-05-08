@@ -1,38 +1,152 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar.css */
+.navbar {
+  background-color: #4CAF50;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.navbar-right button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-right button:hover {
+  color: #ddd;
+}
+
+/* Login.css */
+.login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 10%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+.login-container p {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.user-info-logout-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 300px;
+  gap: 20px;
+  height:fit-content;
+}
+
+.user-name{
   color: white;
+  font-size: 14.5px;
 }
 
-.App-link {
-  color: #61dafb;
+.user-info-logout-container img{
+  width: 30px;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.login-container button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #45a049;
+}
+
+
+/* CreatePost.css */
+.create-post-container {
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+/* CreateForm.css */
+.create-form {
+  margin-top: 20px;
+  
+}
+
+.create-form input{
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.create-form textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.create-form input[type="text"]::placeholder,
+.create-form textarea::placeholder {
+  color: #999;
+}
+
+.create-form p {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.create-form input[type="submit"] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-form input[type="submit"]:hover {
+  background-color: #45a049;
 }
