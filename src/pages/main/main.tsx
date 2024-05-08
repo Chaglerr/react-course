@@ -21,7 +21,7 @@ export const Main = () => {
     };
     useEffect(() => {
         getPosts();
-    }, []);
+    }, [getPosts]);
     return (
         <div>
             {postsList?.map((post) => (
